@@ -1,0 +1,10 @@
+
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+    <li><%= bookmark.movie.title %>
+      <%= bookmark.movie.overview %>
+      <%= bookmark.movie.rating %>
+      <%= bookmark.comment %></li>
+  <% end %>
+</ul>
+ <%= link_to "Back to lists", lists_path%>
